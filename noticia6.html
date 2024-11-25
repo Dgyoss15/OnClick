@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Visual: La Revolución de las Búsquedas Online</title>
+    <link rel="stylesheet" href="noticia.css"> <!-- Conexión al archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <img src="blog.png" alt="Mi Marca" class="logo">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#publicaciones">Publicaciones</a></li>
+                <li><a href="index.html#acercade">Acerca de</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de Cabecera -->
+    <div class="image-header">
+        <img src="imagen6.jpg" alt="Imagen de la noticia" class="header-img">
+        <div class="overlay"></div>
+        <div class="title-container">
+            <h1>Reconocimiento Visual: La Revolución de las Búsquedas Online</h1>
+            <a href="index.html#publicaciones" class="back-btn">Regresar a Publicaciones</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la Noticia -->
+    <div class="content">
+        <p>
+            El reconocimiento visual es una tendencia emergente que está revolucionando la forma en
+            que los consumidores realizamos búsquedas en línea. Herramientas como Google Lens o apps
+            como Pinterest nos permiten a los usuarios buscar productos y servicios utilizando solo
+            una imagen, eliminando la tediosa necesidad de escribir palabras clave. Esta tecnología
+            está transformando nuestra experiencia de compra y cambiando la forma en que las marcas
+            muestran sus productos en línea. Pienso que para el siguiente año más plataformas adoptarán
+            esta tecnología, lo que obligará a las muchas marcas a optimizar sus imágenes para facilitarnos
+            estas búsquedas visuales en esta cultura tan efímera. Este cambio destaca lo importante que es
+            crear contenido visual de calidad, ya que las imágenes de productos no solo se utilizan para
+            llamar la atención, sino también para mejorar las posibilidades
+            de ser encontradas por búsquedas visuales. Nosotros los consumidores, ahora más que nunca,
+            deseamos poder encontrar lo que buscamos rápidamente, y el reconocimiento visual nos facilita
+            este proceso de manera extraordinaria.
+        </p>
+
+        <div class="author-info">
+            <span>Escrito por: Jocelyn Hernández</span>
+            <div class="reactions">
+                <span>
+                    <i class="like" onclick="updateLikes()">👍</i> <span id="like-count">10</span>
+                </span>
+                <span>
+                    <i class="dislike" onclick="updateDislikes()">👎</i> <span id="dislike-count">2</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let likes = 10;
+        let dislikes = 2;
+
+        function updateLikes() {
+            likes++;
+            document.getElementById("like-count").textContent = likes;
+        }
+
+        function updateDislikes() {
+            dislikes++;
+            document.getElementById("dislike-count").textContent = dislikes;
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 OnClick. (Pagina escolar sin fines de lucro)</p>
+    </footer>
+
+</body>
+</html>

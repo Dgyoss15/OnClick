@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing: ¿Por Qué Más Largo es Mejor?</title>
+    <link rel="stylesheet" href="noticia.css"> <!-- Conexión al archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <img src="blog.png" alt="Mi Marca" class="logo">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#publicaciones">Publicaciones</a></li>
+                <li><a href="index.html#acercade">Acerca de</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de Cabecera -->
+    <div class="image-header">
+        <img src="imagen3.jpeg" alt="Imagen de la noticia" class="header-img">
+        <div class="overlay"></div>
+        <div class="title-container">
+            <h1>Video Marketing: ¿Por Qué Más Largo es Mejor?</h1>
+            <a href="index.html#publicaciones" class="back-btn">Regresar a Publicaciones</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la Noticia -->
+    <div class="content">
+        <p>
+            Estos ultimos momento he notado que el video marketing se ha establecido como una de las
+            herramientas más poderosas dentro del marketing digital, y no muestra señales de que pare.
+            Con la pupularidad de plataformas como YouTube, TikTok y videos en redes sociales, las
+            marcas han comenzado a invertir en contenidos para estas plataformas y así conectarse con
+            sus audiencias. Yo espero que el video marketing crezca en formato y relevancia, para que
+            se destaque no solo en los anuncios publicitarios, sino también como una forma para generar
+            lealtad en las marcas. Lo que está cambiando es el tipo de contenido que producen crean.
+            Mientras que antes se daba preferencia a los videos cortos para captar la atención, ahora
+            la tendencia es apostar por los videos más largos que cuenten historias más profundas. Este
+            cambio tiene que ver con un interés en ofrecer una experiencia más inmersiva y menos superficial,
+            lo que ayuda a mantener a la audiencia entretenida durante más tiempo. Así las marcas
+            podran lograr contar historias relevantes y que conecten emocionalmente con sus consumidores
+            mediante este formato, no solo aumentan su visibilidad, sino también su impacto.
+        </p>
+
+        <div class="author-info">
+            <span>Escrito por: Jocelyn Hernández</span>
+            <div class="reactions">
+                <span>
+                    <i class="like" onclick="updateLikes()">👍</i> <span id="like-count">10</span>
+                </span>
+                <span>
+                    <i class="dislike" onclick="updateDislikes()">👎</i> <span id="dislike-count">2</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let likes = 10;
+        let dislikes = 2;
+
+        function updateLikes() {
+            likes++;
+            document.getElementById("like-count").textContent = likes;
+        }
+
+        function updateDislikes() {
+            dislikes++;
+            document.getElementById("dislike-count").textContent = dislikes;
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 OnClick. (Pagina escolar sin fines de lucro)</p>
+    </footer>
+
+</body>
+</html>

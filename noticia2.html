@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microinfluencers: El Poder de las Audiencias Pequeñas</title>
+    <link rel="stylesheet" href="noticia.css"> <!-- Conexión al archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <img src="blog.png" alt="Mi Marca" class="logo">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#publicaciones">Publicaciones</a></li>
+                <li><a href="index.html#acercade">Acerca de</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de Cabecera -->
+    <div class="image-header">
+        <img src="imagen2.png" alt="Imagen de la noticia" class="header-img">
+        <div class="overlay"></div>
+        <div class="title-container">
+            <h1>Microinfluencers: El Poder de las Audiencias Pequeñas</h1>
+            <a href="index.html#publicaciones" class="back-btn">Regresar a Publicaciones</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la Noticia -->
+    <div class="content">
+        <p>
+            Los micro y los nanoinfluencers, que tienen entre 1.000 y 10.000 seguidores, están ganando
+            terreno como una de las estrategias más rentables en marketing digital. Mientras que los
+            grandes influencers siguen siendo populares, he visto que ahora las marcas han comenzado a
+            priorizar a los creadores de contenido por su capacidad de generar relaciones más reales
+            y cercanas con las audiencias. A diferencia de los influencers de gran escala, los pequeños
+            creadores se dirigen a nichos más específicos, lo que les permite generar un impacto más significativo
+            en comunidades pequeñas pero muy leales. He notado que una de las razones principales por las que los
+            microinfluencers están en auge es el costo relativamente bajo comparado con las campañas de
+            grandes influencers, lo que hace que las marcas puedan repartir el presupuesto que tienen en varios
+            creadores de contenido sin perder efectividad. Además, los microinfluencers son más vistos
+            como figuras accesibles y reales, lo que aumenta la confianza de nosotros los seguidores en sus
+            recomendaciones. Con el crecimiento de las plataformas de video como TikTok o Instagram, la
+            influencia de los micro y nanoinfluencers está estableciendo un nuevo estándar en las relaciones
+            marca-consumidor.
+        </p>
+
+        <div class="author-info">
+            <span>Escrito por: Jocelyn Hernández</span>
+            <div class="reactions">
+                <span>
+                    <i class="like" onclick="updateLikes()">👍</i> <span id="like-count">10</span>
+                </span>
+                <span>
+                    <i class="dislike" onclick="updateDislikes()">👎</i> <span id="dislike-count">2</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let likes = 10;
+        let dislikes = 2;
+
+        function updateLikes() {
+            likes++;
+            document.getElementById("like-count").textContent = likes;
+        }
+
+        function updateDislikes() {
+            dislikes++;
+            document.getElementById("dislike-count").textContent = dislikes;
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 OnClick. (Pagina escolar sin fines de lucro)</p>
+    </footer>
+
+</body>
+</html>
