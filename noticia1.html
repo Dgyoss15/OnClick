@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA: El Futuro de la Personalización en Marketing</title>
+    <link rel="stylesheet" href="noticia.css"> <!-- Conexión al archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <img src="blog.png" alt="Mi Marca" class="logo">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="blog.html#inicio">Inicio</a></li>
+                <li><a href="blog.html#publicaciones">Publicaciones</a></li>
+                <li><a href="blog.html#acercade">Acerca de</a></li>
+                <li><a href="blog.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de Cabecera -->
+    <div class="image-header">
+        <img src="imagen1.png" alt="Imagen de la noticia" class="header-img">
+        <div class="overlay"></div>
+        <div class="title-container">
+            <h1>IA: El Futuro de la Personalización en Marketing</h1>
+            <a href="blog.html#publicaciones" class="back-btn">Regresar a Publicaciones</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la Noticia -->
+    <div class="content">
+        <p>
+            La inteligencia artificial (IA) se está convirtiendo en una herramienta esencial
+                para las marcas que buscan personalizar su comunicación con los consumidores de
+                manera más eficiente. Plataformas como YouTube han comenzado a utilizar IA para distintas cosas
+                como generar música original que se adapta a los videos o Instagram está comenzando a
+                implementar la IA para que nosotros los usuarios tengamos stickers personalizados que ayudan a
+                aumentar la interacciones entre nosotros. Lo que más me impresiona de esta tendencia es que la
+                IA no sólo crea contenido más interesante, sino que también permite que las marcas desarrollen
+                experiencias personalizadas. Podría casi estar segura que la inteligencia artificial será aún
+                más accesible, lo que permitirá a las empresas optimizar sus estrategias de marketing con un
+                enfoque más directo y preciso. Las marcas que integran estos avances perfectamente no solo podrán
+                aumentar su presencia en línea, sino también pienso que podrán mejorar la calidas de sus campañas
+                al ofrecer contenido verdaderamente personalizado. Mis expectativas en torno a la IA son altas,
+                ya que a mi parecer la personalización se está volviendo el futuro del marketing digital. 
+        </p>
+
+        <div class="author-info">
+            <span>Escrito por: Jocelyn Hernández</span>
+            <div class="reactions">
+                <span>
+                    <i class="like" onclick="updateLikes()">👍</i> <span id="like-count">10</span>
+                </span>
+                <span>
+                    <i class="dislike" onclick="updateDislikes()">👎</i> <span id="dislike-count">2</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let likes = 10;
+        let dislikes = 2;
+
+        function updateLikes() {
+            likes++;
+            document.getElementById("like-count").textContent = likes;
+        }
+
+        function updateDislikes() {
+            dislikes++;
+            document.getElementById("dislike-count").textContent = dislikes;
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 OnClick. (Pagina escolar sin fines de lucro)</p>
+    </footer>
+
+</body>
+</html>
